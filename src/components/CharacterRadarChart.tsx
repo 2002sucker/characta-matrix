@@ -105,6 +105,7 @@ export default function CharacterMatrix({
           </CardHeader>
           <CardContent className="space-y-4">
             <ChartContainer
+              // @ts-ignore
               config={chartConfig}
               className="aspect-square w-full max-w-2xl mx-auto"
             >

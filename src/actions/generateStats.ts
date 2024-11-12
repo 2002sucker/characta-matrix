@@ -26,6 +26,7 @@ export async function generateCharacterStats(
     });
 
     const response = completion.choices[0].message.content;
+    // @ts-ignore
     const values = response.match(/\d+/g)?.map(Number) || [];
 
     if (values.length !== 18) {
